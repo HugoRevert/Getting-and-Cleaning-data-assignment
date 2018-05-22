@@ -104,4 +104,4 @@ x<-group_by(x,subject,activity) #we just group the data set by subject and activ
 x<-(summarize_each(x,funs(mean))) #for each we calculate the average of each variable for each activity and each subject
 
   #and then we export the data calling it "TidyData" to import it on Coursera
-write.table(x,file = "TidyData",row.name=FALSE)
+write.table(x,file = "TidyData.txt",row.name=FALSE)
